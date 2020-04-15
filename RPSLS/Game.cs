@@ -18,12 +18,28 @@ namespace RPSLS
         //Constructor
         public Game()
         {
-            pointsNeededtoWin = 3
+            pointsNeededtoWin = 3;
         }
 
 
         //Member Methods (CAN DO)
+        public void RunGame() // Master Method
+        {
+            DisplayRules();
+            ChooseGameMode();
+            
+        }
 
+        public void DisplayRules()
+        {
+            Console.WriteLine("These are the rules! Rock crushes Scissors. Scissors cut Paper. Rock crushes Lizard. Lizard poisons Spock. Spock smashes Scissors. Scissor decpitates Lizard. Lizard eats Paper. Paper disproves Spock. Spock vaporize Rock. ");
+            Console.ReadLine();
+        }
 
+        public void ChooseGameMode()
+        {
+            Console.WriteLine("Please enter 1 for human vs Computer, or enter 2 for Human vs Human");
+            
+        }
     }
 }

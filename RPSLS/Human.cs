@@ -12,19 +12,23 @@ namespace RPSLS
         //Member Variables (HAS A)
          
         //Constructor
-        public Human(string name, string objects)
+        public Human()
         {
-            this.name = name;
-            this.objects = objects;
+          
 
 
             
         }
 
-        
-         
+
+
 
         //Member Methods (CAN DO)
+
+        public override void chooseGesture()
+        {
+
+        }
 
 
     }

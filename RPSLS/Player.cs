@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace RPSLS
 {
-    class Player
+    abstract class Player
     {// Human human;
      // Computer computer;
 
 
         //Member Variables (HAS A)
-        public string name;
+        public int score;
         public string objectsGestures;
 
 
 
         //Constructor
-        public Player(string  name)
+        public void viewGestures(List<string> objectGestures)
 
         {
 
@@ -29,23 +29,16 @@ namespace RPSLS
             objectsGestures.Add("Scissors");
             objectsGestures.Add("Lizard");
             objectsGestures.Add("Spock");
-          
-        }
 
-        public string 
+            for (int i = 0 < objectGestures.Count; i++)
+                Console.WriteLine();
 
-        {
-            get{return name;}
-           
-             set
-             while 
-     
-}
-         }
-        
+
+
 
         //Member Methods (CAN DO)
+        public abstract void chooseGesture();
 
 
-        
-}
+
+    }

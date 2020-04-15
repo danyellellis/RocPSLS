@@ -10,14 +10,16 @@ namespace RPSLS
     {
 
         //Member Variables (HAS A)
-       // public string name = "Bob";
+
+
+
         //Constructor
-        public Computer: Player(string objects)
+        public Computer()
         {
-            this.name = name;
-            this.objects = objects;
+
         }
         
+
 
         //Member Methods (CAN DO)
 
