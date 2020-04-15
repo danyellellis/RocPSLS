@@ -10,9 +10,9 @@ namespace RPSLS
     {
 
         //Member Variables (HAS A)
-        public string name = "Bob";
+       // public string name = "Bob";
         //Constructor
-        public Computer(string name, string objects)
+        public Computer: Player(string objects)
         {
             this.name = name;
             this.objects = objects;
