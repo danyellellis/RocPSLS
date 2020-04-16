@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace RPSLS
 {
-    class Human : Player
+    public class Human : Player
     {
 
         //Member Variables (HAS A)
-         
+
+        public string choice;
+
         //Constructor
         public Human()
         {
@@ -25,9 +27,13 @@ namespace RPSLS
 
         //Member Methods (CAN DO)
 
-        public override void chooseGesture()
+        public override void ChooseGesture()
         {
-
+            //Console writeline to display message asking human to choose a gesture
+            //Save the player's choice as the "choice" member variable using a console readline
+            Console.WriteLine("Choose a Gesture.");
+            chosenGesture = Console.ReadLine();
+          
         }
 
 

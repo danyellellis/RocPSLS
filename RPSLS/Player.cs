@@ -6,39 +6,47 @@ using System.Threading.Tasks;
 
 namespace RPSLS
 {
-    abstract class Player
+    public abstract class Player
     {// Human human;
      // Computer computer;
 
 
         //Member Variables (HAS A)
         public int score;
-        public string objectsGestures;
+        public string chosenGesture;
+        public string viewGestures;
+        public List<string> objectsGestures;
+        
 
 
+
+
+
+        //public string objectsGestures;
+        //public List<string> objectsGestures = new List<string>();
+        // public string choice;
 
         //Constructor
-        public void viewGestures(List<string> objectGestures)
-
+        public  Player()
         {
-
-
-            List<string> objectsGestures = new List<string>();
+            objectsGestures = new List<string>();
             objectsGestures.Add("Rock");
             objectsGestures.Add("Paper");
             objectsGestures.Add("Scissors");
             objectsGestures.Add("Lizard");
             objectsGestures.Add("Spock");
-
-            for (int i = 0 < objectGestures.Count; i++)
-                Console.WriteLine();
-
-
+       
+            
+        }
 
 
         //Member Methods (CAN DO)
-        public abstract void chooseGesture();
+
+
+
+        public abstract void ChooseGesture();
 
 
 
     }
+}
